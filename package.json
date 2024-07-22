@@ -1,0 +1,18 @@
+{
+  "name": "ckphotos",
+  "version": "1.0.0",
+  "description": "Portfolio to showcase photography by Kaili Seibert and Camille Christman, developed by Tre Seibert.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/Tre-Seibert/CKPhotos"
+  },
+  "author": "Tre Seibert",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

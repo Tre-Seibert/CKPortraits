@@ -1,0 +1,214 @@
+/******************/
+/* Desktop Styles */
+/******************/
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 247, 236); /* Set background color */
+}
+/* Main Contaiener */
+.container-fluid {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+    padding: 0 10px; /* Adjust padding to control side margins */
+}
+/* NavBar */
+.left-sidebar {
+    text-align: center;
+    grid-row: 1 / span 2;
+    background-color: rgb(255, 247, 236); /* Light background for sidebar */
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-right: 2px solid #f1d8e7; /* Soft border */
+}
+.left-sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 2.1em;
+    font-weight: 400;
+    font-family: 'Nanum Gothic', serif;
+    text-align: center;
+    color: rgb(136, 134, 134); /* Soft pink color */
+}
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+}
+.nav-links li {
+    margin: 1px 0;
+}
+.nav-links a {
+    color: #000; /* Black text for links */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Forum', sans-serif; /* Stylish, clean font for links */
+    font-weight: 500;
+    display: block;
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+}
+.nav-links a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #f1d8e7; /* Light tan underline */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+}
+.nav-links a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.nav-links a:hover {
+    color: #d65a79; /* Soft pink text on hover */
+}
+
+/* Main Body */
+.main-content {
+    background-color: rgb(255, 247, 236);
+    padding: 0; /* Remove padding to make the carousel fill the container */
+    box-sizing: border-box;
+    font-size: 14px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Slideshow */
+.carousel-inner {
+    width: 100%;
+    height: 100%; /* Ensure the carousel-inner takes full height */
+}
+.carousel-item {
+    height: 100%; /* Ensure carousel-item takes full height */
+}
+.carousel-inner img {
+    max-width: 100%;
+    max-height: 60vh;
+    object-fit: cover;
+}
+
+/* Font */
+.nanum-gothic-regular {
+    font-family: "Forum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Text on top of slideshow */
+.carousel-caption-static {
+    position: absolute;
+    bottom: 29px;
+    left: 29px;
+    text-align: left;
+    color: white;
+    font-size: 3.4em;
+    font-weight: 400;
+    font-family: 'Forum', serif;
+    z-index: 10; /* Ensure the text is above the slideshow */
+}
+
+/* Font */
+.forum-regular {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 4 Pics at bottom */
+.bottom-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.box {
+    background-color: white;
+    overflow: hidden;
+}
+.box img {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+}
+/* to house the picture when clicked */
+.modal-dialog {
+    max-width: 75vh;
+    margin: 30px auto;
+}
+
+.modal-body img {
+    width: 100%;
+    height: 75vh;
+}
+
+
+
+
+
+
+/* Mobile Styles */
+
+/* Tablets and up */
+@media only screen and (min-width: 1024px) {
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 1023px) {
+    .desktop {
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    body {
+        font-family: 'Forum', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .title-bar {
+        background-color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        box-shadow: 0 4px 2px -2px gray;
+    }
+    .carousel-inner img {
+        max-width: 100%;
+        max-height: auto;
+        object-fit: cover;
+    }
+    .bottom-boxes {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+    .box img {
+        width: 100%;
+        height: 35vh;
+        object-fit: cover;
+    }
+    .carousel-caption-static{
+        font-size: 1.4em;
+        left: 29px;
+        text-align: left;
+        color: white;
+        font-weight: 400;
+        font-family: 'Forum', serif;
+        z-index: 1; /* Ensure the text is above the slideshow */
+    }
+}
