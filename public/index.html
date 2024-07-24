@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="photos/favicon.ico">
 </head>
 <body>
     <div class="desktop">
@@ -23,8 +25,8 @@
                 <div class="col-2 left-sidebar">
                     <h2 class="pt-5 ckphoto">C & K <br> Photos</h2>
                     <ul class="nav-links pt-5">
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#kaili">KAILI</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="kaili.html">KAILI</a></li>
                         <li><a href="#camille">CAMILLE</a></li>
                         <li><a href="#book-now">BOOK NOW</a></li>
                         <li><a href="#services">SERVICES</a></li>
@@ -43,10 +45,10 @@
                             <!--Slideshow photos-->
                             <div class="carousel-inner pt-2">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="/public/photos/home5.png" alt="First slide">
+                                    <img class="d-block w-100" src="/photos/IMG_5068.png" alt="First slide">
                                 </div>
                                 <div class="carousel-item fluid">
-                                    <img class="d-block w-100" src="/public/photos/home2.png" alt="Second slide">
+                                    <img class="d-block w-100" src="/photos/IMG_5169.png" alt="Second slide">
                                 </div>
                             </div>
                             <!--Slideshow arrows-->
@@ -69,14 +71,14 @@
                         <!-- Box 1 -->
                         <div class="box">
                             <a href="#" data-toggle="modal" data-target="#modalImage1">
-                                <img src="/public/photos/home3.png" alt="Image 3">
+                                <img src="/photos/IMG_8885.png" alt="Image 3">
                             </a>
                             <!-- Modal -->
                             <div class="modal fade" id="modalImage1" tabindex="-1" role="dialog" aria-labelledby="modalImage1Label" aria-hidden="true">
                                 <div class="modal-dialog modal-sm" role="document">
                                     <div class="modal-content">
                                         <div class="modal-body">
-                                            <img src="/public/photos/home3.png" class="img-fluid" alt="Image 3">
+                                            <img src="/photos/IMG_8885.png" class="img-fluid" alt="Image 3">
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -88,14 +90,14 @@
                         <!-- Box 2 -->
                         <div class="box">
                             <a href="#" data-toggle="modal" data-target="#modalImage2">
-                                <img src="/public/photos/home4.png" alt="Image 4">
+                                <img src="/photos/IMG_5349.png" alt="Image 4">
                             </a>
                             <!-- Modal -->
                             <div class="modal fade" id="modalImage2" tabindex="-1" role="dialog" aria-labelledby="modalImage2Label" aria-hidden="true">
                                 <div class="modal-dialog modal-sm" role="document">
                                     <div class="modal-content">
                                         <div class="modal-body">
-                                            <img src="/public/photos/home4.png" class="img-fluid" alt="Image 4">
+                                            <img src="/photos/IMG_5349.png" class="img-fluid" alt="Image 4">
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -107,14 +109,14 @@
                         <!-- Box 3 -->
                         <div class="box">
                             <a href="#" data-toggle="modal" data-target="#modalImage3">
-                                <img src="/public/photos/home5.png" alt="Image 5">
+                                <img src="/photos/IMG_5062.png" alt="Image 5">
                             </a>
                             <!-- Modal -->
                             <div class="modal fade" id="modalImage3" tabindex="-1" role="dialog" aria-labelledby="modalImage3Label" aria-hidden="true">
                                 <div class="modal-dialog modal-sm" role="document">
                                     <div class="modal-content">
                                         <div class="modal-body">
-                                            <img src="/public/photos/home5.png" class="img-fluid" alt="Image 5">
+                                            <img src="/photos/IMG_5062.png" class="img-fluid" alt="Image 5">
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -126,14 +128,14 @@
                         <!-- Box 4 -->
                         <div class="box">
                             <a href="#" data-toggle="modal" data-target="#modalImage4">
-                                <img src="/public/photos/home6.png" alt="Image 6">
+                                <img src="/photos/IMG_3743.png" alt="Image 6">
                             </a>
                             <!-- Modal -->
                             <div class="modal fade" id="modalImage4" tabindex="-1" role="dialog" aria-labelledby="modalImage4Label" aria-hidden="true">
                                 <div class="modal-dialog modal-sm" role="document">
                                     <div class="modal-content">
                                         <div class="modal-body">
-                                            <img src="/public/photos/home6.png" class="img-fluid" alt="Image 6">
+                                            <img src="/photos/IMG_3743.png" class="img-fluid" alt="Image 6">
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -150,11 +152,24 @@
 
     <div class="mobile">
         <div class="container-fluid">
-            <!-- Title Bar -->
-            <div class="title-bar">
-                C & K Photos
-            </div>
 
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">C&K Photos</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="kaili.html">KAILI</a></li>
+                <li class="nav-item"><a class="nav-link" href="#camille">CAMILLE</a></li>
+                <li class="nav-item"><a class="nav-link" href="#book-now">BOOK NOW</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
+            </div>
+            </nav>
+    
             <!-- Slideshow -->
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -164,11 +179,18 @@
                 <!--Slideshow photos-->
                 <div class="carousel-inner pt-2">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="/public/photos/home5.png" alt="First slide">
+                        <img class="d-block w-100" src="/photos/IMG_5068.png" alt="First slide">
+                        <div class="carousel-caption">
+                            <h5>Let your important memories be captured forever</h5>
+                            <button class="learn-more-btn">Learn more</button>
+                        </div>
                     </div>
-                    
-                    <div class="carousel-item fluid">
-                        <img class="d-block w-100" src="/public/photos/home2.png" alt="Second slide">
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/photos/IMG_3531.png" alt="Second slide">
+                        <div class="carousel-caption">
+                            <h5>Let your important memories be captured forever</h5>
+                            <button class="learn-more-btn">Learn more</button>
+                        </div>
                     </div>
                 </div>
                 <!--Slideshow arrows-->
@@ -181,43 +203,28 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <!-- Static Caption -->
-            <div class="carousel-caption-static">
-                Let your important<br>memories be captured forever
-            </div>
-
+    
             <!-- Bottom Pictures -->
             <div class="bottom-boxes mt-3">
                 <div class="box">
-                    <img src="/public/photos/home3.png" alt="Image 3">
+                    <img src="/photos/IMG_8885.png" alt="Image 3">
                 </div>
                 <div class="box">
-                    <img src="/public/photos/home4.png" alt="Image 4">
+                    <img src="/photos/IMG_5349.png" alt="Image 4">
                 </div>
                 <div class="box">
-                    <img src="/public/photos/home5.png" alt="Image 5">
+                    <img src="/photos/IMG_5062.png" alt="Image 5">
                 </div>
                 <div class="box">
-                    <img src="/public/photos/home6.png" alt="Image 6">
+                    <img src="/photos/IMG_3743.png" alt="Image 6">
                 </div>
             </div>
         </div>
-
     </div>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Custom JS -->
-    <script>
-        document.getElementById('toggleButton').addEventListener('click', function () {
-            var carousel = document.getElementById('carouselExampleIndicators');
-            var carouselDisplay = window.getComputedStyle(carousel).display;
-            if (carouselDisplay === 'none') {
-                carousel.style.display = 'block';
-            } else {
-                carousel.style.display = 'none';
-            }
-        });
-    </script>
+
 </body>
 </html>
