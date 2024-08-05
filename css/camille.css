@@ -1,3 +1,4 @@
+
 /******************/
 /* Desktop Styles */
 /******************/
@@ -246,7 +247,7 @@
         color: #5a7184;
     }
     .hero-text {
-        transform: translatey(-25%);
+        transform: translatey(-5%);
         background-color: rgb(237, 240, 246); /* Black background with transparency */
         padding: 40px 40px 60px;
         max-width: 90%;
@@ -260,7 +261,7 @@
         margin-left: auto;
         margin-right: auto;
         text-align: center;
-        margin-top: -5vh;
+        margin-top: 3vh;
         padding-bottom: 45px;
     }
     .navbar-brand {
