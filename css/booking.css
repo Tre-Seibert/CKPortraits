@@ -1,0 +1,287 @@
+
+/******************/
+/* Desktop Styles */
+/******************/
+
+@media only screen and (min-width: 1024px) {
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+
+
+
+    /* defines styles for body tag*/
+    body {
+        font-family: 'Forum', sans-serif;
+        text-align: center;
+        padding: 40px;
+        background-color: rgb(255, 247, 236);
+    }
+    /* makes book button burgandy*/
+    .btn-primary {
+    background-color: rgb(103, 32, 28);
+    border-color: rgb(103, 32, 28);
+    }
+
+    .btn-primary:hover {
+    background-color: rgb(85, 27, 24);
+    border-color: rgb(85, 27, 24);
+    }
+
+    /*******Calendar*************/
+    /* defines styles for calendar on desktop*/
+    #calendar-container {
+    max-width: 80%; 
+    margin: 0 auto; 
+    margin-top: 40px;
+    margin-bottom: 40px; 
+    }
+    /* makes the day number not clickable*/
+    .fc-col-header-cell-cushion {
+    text-decoration: none;
+    }
+
+    /* makes the day number not clickable*/
+    .fc-daygrid-day-number {
+    text-decoration: none;
+    pointer-events: none;
+    }
+
+    /* change calendar text color to black */
+    .fc-content, .fc-daygrid-event, .fc-list-event-title, .fc-daygrid-event-dot a {
+    color: black;
+    }
+    a {
+    color: black;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 500px) {
+    /* disables today button*/
+    .fc .fc-button-primary:disabled {
+        display: none;
+    }
+    /* adjusts the width of the calendar*/
+    #calendar-container {
+        max-width: 100%; 
+    }
+    /* adjust height of each cell*/
+    .fc-daygrid-day {
+        height: 60px;
+    }
+    /* adjusts font size of date */
+    .fc-daygrid-block-event .fc-event-time, .fc-daygrid-block-event .fc-event-title {
+        font-size: 9px;
+    }
+    }
+
+
+    /******* nav Bar ****************/
+
+    /* makes nav bar font color black */
+    .container-fluid {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 10px;
+        padding: 0 10px; /* Adjust padding to control side margins */
+    }
+    /* NavBar */
+    .left-sidebar {
+        text-align: center;
+        grid-row: 1 / span 2;
+        background-color: rgb(255, 247, 236); /* Light background for sidebar */
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 20px;
+        border-right: 2px solid #f1d8e7; /* Soft border */
+    }
+    .left-sidebar h2 {
+        margin-bottom: 20px;
+        font-size: 2.1em;
+        font-weight: 400;
+        font-family: 'Nanum Gothic', serif;
+        text-align: center;
+        color: rgb(136, 134, 134); /* Soft pink color */
+    }
+    .nav-links {
+        list-style-type: none;
+        padding: 0;
+    }
+    .nav-links li {
+        margin: 1px 0;
+    }
+    .nav-links a {
+        color: #000; /* Black text for links */
+        text-decoration: none; /* Remove underline */
+        font-family: 'Forum', sans-serif; /* Stylish, clean font for links */
+        font-weight: 500;
+        display: block;
+        padding: 10px;
+        border-radius: 8px; /* Rounded corners */
+        transition: background-color 0.3s, color 0.3s;
+        position: relative;
+    }
+    .nav-links a::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background-color: #f1d8e7; /* Light tan underline */
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s;
+    }
+    .nav-links a:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    .nav-links a:hover {
+        color: #d65a79; /* Soft pink text on hover */
+    }
+    .col-10 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        padding-bottom: 7vh;
+    }
+
+
+    /* ********footer****************/
+    /* Defines font fam for footer */
+    footer h3 {
+        font-family: 'Forum', sans-serif;
+    }
+
+
+    /* ******************************/
+
+    /* defines custom fonts */
+    .marck-script-regular {
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    }
+}
+
+
+/******************/
+/*  Mobile Styles */
+/******************/
+
+@media only screen and (max-width: 1023px) {
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+
+    /* defines styles for body tag*/
+    body {
+        font-family: 'Forum', sans-serif;
+        text-align: center;
+        padding: 40px;
+        background-color: rgb(255, 247, 236); 
+    }
+    /* makes book button burgandy*/
+    .btn-primary {
+    background-color: rgb(103, 32, 28);
+    border-color: rgb(103, 32, 28);
+    }
+
+    .btn-primary:hover {
+    background-color: rgb(85, 27, 24);
+    border-color: rgb(85, 27, 24);
+    }
+
+    /*******Calendar*************/
+    /* defines styles for calendar on desktop*/
+    #calendar-container {
+    max-width: 80%; 
+    margin: 0 auto; 
+    margin-top: 40px;
+    margin-bottom: 40px; 
+    }
+    /* makes the day number not clickable*/
+    .fc-col-header-cell-cushion {
+    text-decoration: none;
+    }
+
+    /* makes the day number not clickable*/
+    .fc-daygrid-day-number {
+    text-decoration: none;
+    pointer-events: none;
+    }
+
+    /* change calendar text color to black */
+    .fc-content, .fc-daygrid-event, .fc-list-event-title, .fc-daygrid-event-dot a {
+    color: black;
+    }
+    a {
+    color: black;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 500px) {
+    /* disables today button*/
+    .fc .fc-button-primary:disabled {
+        display: none;
+    }
+    /* adjusts the width of the calendar*/
+    #calendar-container {
+        max-width: 100%; 
+    }
+    /* adjust height of each cell*/
+    .fc-daygrid-day {
+        height: 60px;
+    }
+    /* adjusts font size of date */
+    .fc-daygrid-block-event .fc-event-time, .fc-daygrid-block-event .fc-event-title {
+        font-size: 9px;
+    }
+    }
+
+
+    /******* nav Bar ****************/
+
+    /* makes nav bar font color black */
+    .navbar-dark .navbar-nav .nav-link {
+    color: black;
+    }
+    .nav-link {
+    color: black;
+    font-weight: bold;
+    }
+
+
+    /* ********footer****************/
+    /* Defines font fam for footer */
+    footer h3 {
+        font-family: 'Forum', sans-serif;
+    }
+
+
+    /* ******************************/
+
+    /* defines custom fonts */
+    .marck-script-regular {
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+}
