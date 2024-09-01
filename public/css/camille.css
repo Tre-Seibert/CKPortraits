@@ -3,7 +3,8 @@
 /* Desktop Styles */
 /******************/
 
-@media only screen and (min-width: 1024px) {
+
+@media screen and (min-device-width: 1024px) { 
     .desktop {
         display: block;
     }
@@ -88,7 +89,146 @@
         padding-bottom: 7vh;
     }
     .image-container {
-        padding-top: 22vh;
+        padding-top: 32vh;
+    }
+    .img-fluid {
+        max-width: 40%;
+        max-height: 90vh;
+        margin-right: 40vh;
+        margin-top: 31vh;
+    }
+    .blue-text-block {
+        background-color: #e7edf1;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 40%;
+        margin-left: 40vh;
+        position: relative;
+        bottom: 120px;
+        right: 150px;
+    }
+    .blue-text-block h2 {
+        font-family: 'Forum', sans-serif;
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    .blue-text-block p {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.1em;
+        color: #333;
+    }
+    .blue-text-block a.btn-primary {
+        background-color: #3E7F94;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+    /*****************/
+    /*  Info Section */
+    /*****************/    
+    .info-box {
+        text-align: center;
+        padding: 20px;
+        font-family: 'Nanum Gothic', serif;
+    }
+    .info-box h2 {
+        font-size: 2rem;
+        color: black;
+    }
+    .info-box p {
+        font-size: 1.3rem;
+        color: #5a7184;
+    }
+}
+
+@media only screen and (min-width: 1501px) {
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(255, 247, 236); /* Set background color */
+    }
+    /* Main Container */
+    .container-fluid {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 10px;
+        padding: 0 10px; /* Adjust padding to control side margins */
+    }
+    /* NavBar */
+    .left-sidebar {
+        text-align: center;
+        grid-row: 1 / span 2;
+        background-color: rgb(255, 247, 236); /* Light background for sidebar */
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 20px;
+        border-right: 2px solid #f1d8e7; /* Soft border */
+    }
+    .left-sidebar h2 {
+        margin-bottom: 20px;
+        font-size: 2.1em;
+        font-weight: 400;
+        font-family: 'Nanum Gothic', serif;
+        text-align: center;
+        color: rgb(136, 134, 134); /* Soft pink color */
+    }
+    .nav-links {
+        list-style-type: none;
+        padding: 0;
+    }
+    .nav-links li {
+        margin: 1px 0;
+    }
+    .nav-links a {
+        color: #000; /* Black text for links */
+        text-decoration: none; /* Remove underline */
+        font-family: 'Forum', sans-serif; /* Stylish, clean font for links */
+        font-weight: 500;
+        display: block;
+        padding: 10px;
+        border-radius: 8px; /* Rounded corners */
+        transition: background-color 0.3s, color 0.3s;
+        position: relative;
+    }
+    .nav-links a::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background-color: #f1d8e7; /* Light tan underline */
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s;
+    }
+    .nav-links a:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    .nav-links a:hover {
+        color: #d65a79; /* Soft pink text on hover */
+    }
+    .col-10 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        padding-bottom: 7vh;
+    }
+    .image-container {
+        padding-top: 32vh;
     }
     .img-fluid {
         max-width: 40%;
