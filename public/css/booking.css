@@ -37,11 +37,13 @@
     /*******Calendar*************/
     /* defines styles for calendar on desktop*/
     #calendar-container {
-    max-width: 80%; 
+    max-width: 100%; 
     margin: 0 auto; 
     margin-top: 40px;
-    margin-bottom: 40px; 
+    margin-bottom: 60px;
+    aspect-ratio: 2.5;
     }
+
     /* makes the day number not clickable*/
     .fc-col-header-cell-cushion {
     text-decoration: none;
@@ -215,6 +217,7 @@
     margin: 0 auto; 
     margin-top: 40px;
     margin-bottom: 40px; 
+    aspect-ratio: 2;
     }
     /* makes the day number not clickable*/
     .fc-col-header-cell-cushion {
