@@ -9,6 +9,8 @@ const app = express(); // library building web apps for node js
 // Define a port number
 const port = process.env.PORT || 4000;
 
+app.use(express.json());
+
 // Define the public directory to serve static files
 app.use(express.static(path.join(__dirname, '/public')));
 
@@ -99,10 +101,14 @@ app.post('/submit-booking', async (req, res) => {
       
       // await response
       const json = await response.json();
-      console.log("Captcha")
-      // display message is verifcaiton fails
+
+      // display message if verifcaiton fails
       if (!json.success) {
+        console.log("Frick")
           return res.status(400).send("reCAPTCHA verification failed");
+      }
+      else {
+
       }
   } 
   // throw errors if there an error is returned

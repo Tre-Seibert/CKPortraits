@@ -76,7 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('booking-details').addEventListener('submit', function(event) {
         event.preventDefault();
         // Get the booking details from the form
-        var eventType = document.getElementById('event-type').value;
         var eventDate = document.getElementById('booking-date').value; // Get the booking date from the hidden input field
         var name = document.getElementById('client-name').value;
         var email = document.getElementById('email').value;
@@ -94,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
   
         // Client side form validation
-        if (!eventType || !eventDate || !name || !email || !phone || !details || !recaptchaToken) {
+        if (!eventDate || !name || !email || !phone || !details || !recaptchaToken) {
             // Display an error message for incomplete fields
             alert('Please fill out all fields');
             return;
@@ -107,7 +106,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                eventType: eventType,
                 eventDate: eventDate,
                 name: name,
                 email: email,
