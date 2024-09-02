@@ -104,7 +104,7 @@ app.post('/submit-booking', async (req, res) => {
 
       // display message if verifcaiton fails
       if (!json.success) {
-        console.log("Frick")
+        // console.log("Frick")
           return res.status(400).send("reCAPTCHA verification failed");
       }
       else {
@@ -119,8 +119,8 @@ app.post('/submit-booking', async (req, res) => {
 
   // configure nodemailer settings
   const mailOptions = {
-      from: 'shawneerunevents@gmail.com',
-      to: 'shawneerunevents@gmail.com', 
+      from: 'camillekailiphotography@gmail.com',
+      to: 'camillekailiphotography@gmail.com', 
       subject: `${name} - New Booking Request`,
       text: `
       New booking request:
@@ -143,10 +143,9 @@ app.post('/submit-booking', async (req, res) => {
       }
   });
 
-  console.log("BETTTTSKI")
   // proceed with booking insertion
   // insert the booking details into the database using parameterized query
-  const sql = "INSERT INTO Bookings (booking_date, client_name, email, phone_number, details) VALUES (?, ?, ?, ?, ?, ?)";
+  const sql = "INSERT INTO Bookings (booking_date, client_name, email, phone_number, details) VALUES (?, ?, ?, ?, ?)";
   const values = [eventDate, name, email, phone, details];
   con.query(sql, values, (err, result) => {
       // check for errors
@@ -191,8 +190,8 @@ app.get('/fetch-events', async (req, res) => {
       });
       
       // for testing
-      console.log('Fetched Events:', events.data.items);
-      console.log('Total Events:', events.data.items.length);
+      // console.log('Fetched Events:', events.data.items);
+      // console.log('Total Events:', events.data.items.length);
 
       // store needed details in dict
       const modifiedEvents = events.data.items.map(event => ({
@@ -202,7 +201,7 @@ app.get('/fetch-events', async (req, res) => {
       }));
 
       // for testing
-      console.log(modifiedEvents);
+      // console.log(modifiedEvents);
 
       // respond with the modified events
       res.json(modifiedEvents);
