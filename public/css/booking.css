@@ -13,7 +13,13 @@
         display: block;
     }
 
+    #recaptcha-desktop {
+        display: block;
+    }
 
+    #recaptcha-mobile {
+        display: none;
+    }
 
 
     /* defines styles for body tag*/
@@ -37,11 +43,13 @@
     /*******Calendar*************/
     /* defines styles for calendar on desktop*/
     #calendar-container {
-    max-width: 100%; 
-    margin: 0 auto; 
-    margin-top: 40px;
-    margin-bottom: 60px;
-    aspect-ratio: 2.5;
+    aspect-ratio: 2;
+    margin: 0 auto;
+    }
+
+    .container .justify-content-center .pl-5 .mr-5 .bookingprocess {
+        padding-bottom: 20px;
+        margin: 0 auto;
     }
 
     /* makes the day number not clickable*/
@@ -155,7 +163,7 @@
         align-items: center;
         flex-direction: column;
         height: 100vh;
-        padding-bottom: 7vh;
+        margin: 0 auto;
     }
 
 
@@ -189,6 +197,15 @@
 
     .desktop {
         display: none;
+    }
+
+
+    #recaptcha-desktop {
+        display: none;
+    }
+
+    #recaptcha-mobile {
+        display: block;
     }
 
 
