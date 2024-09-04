@@ -3,24 +3,20 @@
 /* Desktop Styles */
 /******************/
 
+
+@media only screen and (min-width: 1700px) {
+
+    /*******Calendar*************/
+    /* defines styles for calendar on desktop*/
+    #calendar-container { 
+        margin: 0 auto;
+        margin-bottom: 30px;
+        }
+
+
+}
+
 @media only screen and (min-width: 1024px) {
-
-    .mobile {
-        display: none;
-    }
-
-    .desktop {
-        display: block;
-    }
-
-    #recaptcha-desktop {
-        display: block;
-    }
-
-    #recaptcha-mobile {
-        display: none;
-    }
-
 
     /* defines styles for body tag*/
     body {
@@ -43,13 +39,14 @@
     /*******Calendar*************/
     /* defines styles for calendar on desktop*/
     #calendar-container {
-    aspect-ratio: 2;
+    aspect-ratio: 1.7;
     margin: 0 auto;
+    margin-bottom: 30px;
     }
 
     .container .justify-content-center .pl-5 .mr-5 .bookingprocess {
         padding-bottom: 20px;
-        margin: 0 auto;
+        margin: auto;
     }
 
     /* makes the day number not clickable*/
@@ -71,9 +68,7 @@
     color: black;
     }
 
-    /* Mobile Styles */
-    @media (max-width: 500px) {
-    /* disables today button*/
+        /* disables today button*/
     .fc .fc-button-primary:disabled {
         display: none;
     }
@@ -87,8 +82,7 @@
     }
     /* adjusts font size of date */
     .fc-daygrid-block-event .fc-event-time, .fc-daygrid-block-event .fc-event-title {
-        font-size: 9px;
-    }
+        font-size: 12px;
     }
 
 
@@ -103,7 +97,11 @@
         padding: 0 10px; /* Adjust padding to control side margins */
     }
     /* NavBar */
+    .mobile-nav {
+        display: none;
+    }
     .left-sidebar {
+        display: block;
         text-align: center;
         grid-row: 1 / span 2;
         background-color: rgb(255, 247, 236); /* Light background for sidebar */
@@ -158,7 +156,6 @@
         color: #d65a79; /* Soft pink text on hover */
     }
     .col-10 {
-        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -185,79 +182,69 @@
 }
 
 
+
+
+
+
 /******************/
 /*  Mobile Styles */
 /******************/
 
 @media only screen and (max-width: 1023px) {
 
-    .mobile {
-        display: block;
+    .col-10 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 80vh;
     }
 
-    .desktop {
-        display: none;
-    }
-
-
-    #recaptcha-desktop {
-        display: none;
-    }
-
-    #recaptcha-mobile {
-        display: block;
-    }
-
+    #calendar-container {
+        max-width: 100%; 
+      }
 
     /* defines styles for body tag*/
     body {
         font-family: 'Forum', sans-serif;
         text-align: center;
-        padding: 40px;
+        padding: 20px;
         background-color: rgb(255, 247, 236); 
     }
     /* makes book button burgandy*/
     .btn-primary {
-    background-color: rgb(103, 32, 28);
-    border-color: rgb(103, 32, 28);
+        background-color: rgb(103, 32, 28);
+        border-color: rgb(103, 32, 28);
     }
 
     .btn-primary:hover {
-    background-color: rgb(85, 27, 24);
-    border-color: rgb(85, 27, 24);
+        background-color: rgb(85, 27, 24);
+        border-color: rgb(85, 27, 24);
     }
 
     /*******Calendar*************/
-    /* defines styles for calendar on desktop*/
-    #calendar-container {
-    max-width: 80%; 
-    margin: 0 auto; 
-    margin-top: 40px;
-    margin-bottom: 40px; 
-    aspect-ratio: 2;
+    /* defines styles for calendar on mobile*/
+    #calendar-container { 
+        margin-top: 40px;;
     }
     /* makes the day number not clickable*/
     .fc-col-header-cell-cushion {
-    text-decoration: none;
+        text-decoration: none;
     }
 
     /* makes the day number not clickable*/
     .fc-daygrid-day-number {
-    text-decoration: none;
-    pointer-events: none;
+        text-decoration: none;
+        pointer-events: none;
     }
 
     /* change calendar text color to black */
     .fc-content, .fc-daygrid-event, .fc-list-event-title, .fc-daygrid-event-dot a {
-    color: black;
+        color: black;
     }
     a {
-    color: black;
+        color: black;
     }
 
-    /* Mobile Styles */
-    @media (max-width: 500px) {
-    /* disables today button*/
+      /* disables today button*/
     .fc .fc-button-primary:disabled {
         display: none;
     }
@@ -271,20 +258,34 @@
     }
     /* adjusts font size of date */
     .fc-daygrid-block-event .fc-event-time, .fc-daygrid-block-event .fc-event-title {
-        font-size: 9px;
+        font-size: 12px;
     }
-    }
+
 
 
     /******* nav Bar ****************/
 
-    /* makes nav bar font color black */
-    .navbar-dark .navbar-nav .nav-link {
-    color: black;
+    /* NavBar */
+    .mobile-nav {
+        display: block;
     }
-    .nav-link {
-    color: black;
-    font-weight: bold;
+    .left-sidebar {
+        display: none;
+    }
+
+    .navbar-brand {
+        padding: 10px;
+        font-size: 2.1em;
+        font-weight: 400;
+        font-family: 'Nanum Gothic', serif;
+        text-align: center;
+        color: black;
+    }
+    .navbar {        
+        background-color: rgb(255, 247, 236); 
+    }
+    .nav-item {
+        text-align: center;
     }
 
 
@@ -299,9 +300,10 @@
 
     /* defines custom fonts */
     .marck-script-regular {
-    font-family: "Marck Script", cursive;
-    font-weight: 400;
-    font-style: normal;
+        font-family: "Marck Script", cursive;
+        font-weight: 400;
+        font-style: normal;
     }
+
 
 }
